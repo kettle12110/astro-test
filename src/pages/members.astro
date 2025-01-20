@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンバー</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: white;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2列に設定 */
+        gap: 16px;
+        padding: 16px;
+        width: calc(2 * 500px + 16px); /* カード2枚分の幅とギャップを計算 */
+        box-sizing: border-box; /* パディングを含めた幅を計算 */
+      }
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        padding: 16px;
+        border-radius: 8px;
+        background: #EEEEEE;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px; /* カードの幅を固定 */
+      }
+      .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column; 
+        align-items: left;
+        margin-top: 12px;
+        margin-left: 90px;
+      }
+      .name {　
+        text-align: left; /* 左揃えに変更 */
+      }
+      .name {　
+        text-align: left; /* 左揃えに変更 */
+      }
+      .description {
+        margin-top: 30px;
+        line-height: 1.5;
+        text-align: left;
+      }
+      .icons {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+      .xandgithub {
+        position: absolute;
+        top: 8px;
+        right:8px
+      }
+      .header {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>私たちについて</h1>
+      <p>Discordサーバーで主に活動している人たち</p>
+    </div>
+    <div class="grid-container">
+      <div class="card">
+        <div class="xandgithub">
+          <a href="#"><img src="/src/assets/X.png" alt="Close"></a>
+          <a href="https://github.com/username1"><img src="/src/assets/Github.png" alt="GitHub"></a>
+        </div>
+        <img src="/src/assets/member-aki.png" alt="Icon"class="icons">
+        <div class="info">
+          <div class="name">Aki</div>
+          <div class="title">鯖主、陽キャ</div>
+        </div>
+        <div class="description">
+          私はタイに住んでいました<br>
+          私は陽キャです<br>
+          私は～
+        </div>
+      </div>
+      <div class="card">
+        <div class="xandgithub">
+          <a href="#"><img src="/src/assets/X.png" alt="Close"></a>
+          <a href="https://github.com/username2"><img src="/src/assets/Github.png" alt="GitHub"></a>
+        </div>
+        <img src="/src/assets/member-aki.png" alt="Icon"class="icons">
+        <div class="info">
+          <div class="name">名前2</div>
+          <div class="title">称号2</div>
+        </div>
+        <div class="description">
+          ここに紹介文が入ります。<br>
+          ここに紹介文が入ります。<br>
+          ここに紹介文が入ります。
+        </div>
+      </div>
+      <div class="card">
+        <div class="xandgithub">
+          <a href="#"><img src="/src/assets/X.png" alt="Close"></a>
+          <a href="https://github.com/username3"><img src="/src/assets/Github.png" alt="GitHub"></a>
+        </div>
+        <img src="/src/assets/member-aki.png" alt="Icon"class="icons">
+        <div class="info">
+          <div class="name">名前3</div>
+          <div class="title">称号3</div>
+        </div>
+        <div class="description">
+          ここに紹介文が入ります。<br>
+          ここに紹介文が入ります。<br>
+          ここに紹介文が入ります。
+        </div>
+      </div>
+      <div class="card">
+        <div class="xandgithub">
+          <a href="#"><img src="/src/assets/X.png" alt="Close"></a>
+          <a href="https://github.com/username4"><img src="/src/assets/Github.png" alt="GitHub"></a>
+        </div>
+        <img src="/src/assets/member-aki.png" alt="Icon"class="icons">
+        <div class="info">
+          <div class="name">名前4</div>
+          <div class="title">称号4</div>
+        </div>
+        <div class="description">
+          ここに紹介文が入ります。<br>
+          ここに紹介文が入ります。<br>
+          ここに紹介文が入ります。
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
