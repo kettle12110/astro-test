@@ -26,72 +26,19 @@ import Card from '../components/MemberCards.astro';
         display: grid;
         grid-template-columns: repeat(2, 490px); /* カードの幅に合わせて列を自動調整 */
         gap: 50px; /* カード間のスペースを設定 */
+
       }
-      .card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #ccc;
-        padding: 16px;
-        border-radius: 8px;
-        background: #EEEEEE;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .info {
-        display: flex;
-        flex-direction: column; 
-        align-items: left;
-        margin-top: 12px;
-        margin-left: 90px;
-      }
-      .name {
-        text-align: left; /* 左揃えに変更 */
-        font-size: 24px;
-      }
-      .title {
-        text-align: left; /* 左揃えに変更 */
-        font-size: 15px;
-        color: #4A4A4A; /* 文字の色を追加 */
-      }
-      .description {
-        margin-top: 30px;
-        line-height: 1.5;
-        text-align: left;
-        font-size: 18px;
-      }
-      .icon {
-        position: absolute;
-        top: 8px;
-        left: 8px;
-        width: 90px;
-        height: 90px;
-        transform: translate(-10%, -10%);
-      }
-      .xicon {
-        position: absolute;
-        top: 8px;
-        right:50px;
-        width: 34px;
-        height: 34px;
-      }
-      .githubicon {
-        position: absolute;
-        top: 8px;
-        right:8px;
-        width: 34px;
-        height: 34px;
-      }
-      .header {
+      .pageheader {
         text-align: center;
         align-items: center;
-        margin-bottom: 80px; /* 変更 */
+        margin-bottom: 100px; /* 変更 */
       }
-      .weare {
+      .about-main {
         font-size: 56px;
         margin: 0 auto; /* 左右の余白を均等に */
         margin-bottom: 0;
       }
-      .hito {
+      .about-sub {
         font-size: 26px;
         margin: 0 auto; /* 左右の余白を均等に */
 
@@ -99,15 +46,15 @@ import Card from '../components/MemberCards.astro';
     </style>
   </head>
   <body>
-    <div class="header">
-      <p class="weare">私たちについて</p>
-      <p class="hito">Discordサーバーで主に活動している人たち</p>
+    <div class="pageheader">
+      <p class="about-main">私たちについて</p>
+      <p class="about-sub">Discordサーバーで主に活動している人たち</p>
     </div>
     <div class="grid-container">
-      <Card githubUrl="https://github.com/username1" imgUrl="https://github.com/kettle12110/astro-test/blob/master/src/assets/member-aki.png?raw=true" name="Aki" title="鯖主、陽キャ" description="私はタイに住んでいました<br>私は陽キャです<br>私は～" />
-      <Card githubUrl="https://github.com/username1" imgUrl="https://github.com/kettle12110/astro-test/blob/master/src/assets/member-aki.png?raw=true" name="Aki" title="鯖主、陽キャ" description="私はタイに住んでいました<br>私は陽キャです<br>私は～" />
-      <Card githubUrl="https://github.com/username1" imgUrl="https://github.com/kettle12110/astro-test/blob/master/src/assets/member-aki.png?raw=true" name="Aki" title="鯖主、陽キャ" description="私はタイに住んでいました<br>私は陽キャです<br>私は～" />
-      <Card githubUrl="https://github.com/username1" imgUrl="https://github.com/kettle12110/astro-test/blob/master/src/assets/member-aki.png?raw=true" name="Aki" title="鯖主、陽キャ" description="私はタイに住んでいました<br>私は陽キャです<br>私は～" />
+      <Card githubUrl="https://github.com/username1" imgUrl="https://github.com/kettle12110/astro-test/blob/master/src/assets/member-aki.png?raw=true" name="Aki" title="鯖主、陽キャ" description="明るいお姉さん<br>タイにある古のインターネットに住んでいた<br>インフラ（物理）と英語に強い" />
+      <Card githubUrl="https://github.com/username1" imgUrl="https://github.com/kettle12110/astro-test/blob/master/src/assets/member-tasuku.png?raw=true" name="髙木 祐来" title="イイやつ" description="writing<br>writing<br>writing" />
+      <Card githubUrl="https://github.com/username1" imgUrl="https://github.com/kettle12110/astro-test/blob/master/src/assets/member-fu.png?raw=true" name="fu" title="音楽人" description="writing<br>writing<br>writing" />
+      <Card githubUrl="https://github.com/username1" imgUrl="https://github.com/kettle12110/astro-test/blob/master/src/assets/member-kettle.png?raw=true" name="けとる" title="ストゼロ" description="writing<br>writing<br>writing" />
     </div>
   </body>
 </html>
