@@ -17,16 +17,10 @@ import Card from '../components/MemberCards.astro';
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin: 0;
+        height: auto;
+        margin-top: 5%; /* ここを追加 */
         background-color: white;
         text-align: center; /* テキストを中央揃え */
-      }
-      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 490px); /* カードの幅に合わせて列を自動調整 */
-        gap: 50px; /* カード間のスペースを設定 */
-
       }
       .pageheader {
         text-align: center;
@@ -41,6 +35,11 @@ import Card from '../components/MemberCards.astro';
       .about-sub {
         font-size: 26px;
         margin: 0 auto; /* 左右の余白を均等に */
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 490px); /* カードの幅に合わせて列を自動調整 */
+        gap: 50px; /* カード間のスペースを設定 */
 
       }
     </style>
